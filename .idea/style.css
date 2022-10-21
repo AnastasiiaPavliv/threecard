@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: beige;
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border: black 1px solid;
+    background: antiquewhite;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+   text-align: center;
+}
+p{
+    margin: 5px;
+    text-align: center;
+}
+.i{
+    width: 50px;
+    height: 50px;
+    background: azure;
+    border-radius: 50%;
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -35px;
+}
+
+.container button{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+.click{
+    font-size: larger;
+    font-family: Algerian sans-serif;
+}
+
+.container button::before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    background: lightblue;
+    transform: skewX(50deg);
+    filter: blur(10px);
+    top: 0;
+    left: 200px;
+    animation: xxx 2500ms ease-in-out infinite;
+}
+@keyframes xxx {
+    0%{left: -200px}
+    100%{ left: 150%;}
+}
